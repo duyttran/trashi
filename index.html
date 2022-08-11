@@ -8,8 +8,8 @@
   </body>
   <script>
     let password = prompt("Please enter password to enter");
-    let b = btoa(password)
-    if (btoa(password) == "dHJhc2hp") {
+    let b = btoa(password.toLowerCase())
+    if (b == "dHJhc2hp") {
       location.href = "dHJhc2hpCg/trashi.html";
     } else {
       document.getElementById("result").innerHTML = "Incorrect password, but Elisa and Duy say hi!";
