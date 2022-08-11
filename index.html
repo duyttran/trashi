@@ -1,16 +1,15 @@
 <html>
+  <title>Duy and Elisa Wedding Page</title>
   <body>
-    <h1>TraShi Wedding</h1>
-    <h2>Family Day</h2>
-    <div>
-      <a href="https://youtube.com/playlist?list=PL0gZV4N-OVRDL4HRQt7--icJdCq_EHMb6">elisa family videos</a>
-    </div>
-    <div>
-      <a href="https://youtube.com/playlist?list=PL0gZV4N-OVRDTZQZF9kNG1h_HYIYkpnl_">duy family videos</a>
-    <div>
-    <h2>Wedding Day</h2>
-    <h2>Photos</h2>
-    <a href="https://photos.app.goo.gl/HUg1ZYdfQvRXuVWb7">share and view photos here!</a>
+    <div id="result"></div>
   </body>
-
+  <script>
+    let password = prompt("Please enter password to enter");
+    let b = btoa(password)
+    if (btoa(password) == "dHJhc2hp") {
+      location.href = "dHJhc2hpCg/trashi.html";
+    } else {
+      document.getElementById("result").innerHTML = "Incorrect password, but Elisa and Duy say hi!";
+    }
+  </script>
 </html>
